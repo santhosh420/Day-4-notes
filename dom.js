@@ -1,3 +1,7 @@
+//! --------------------FULL OF PROMISE, FETCH, AWAIT CODES TO LEARNING------------------------------------
+
+
+
 // var prom = new Promise((resovle,reject)=>{
 // resovle("Hi how are you man")
 // console.log("create a promise")
@@ -215,7 +219,7 @@
 //  var datain = document.querySelector('nothing')
 //  datain.append(fetch_data)
 //!----------------------------------------------------------------------------------
-// let url = 'https://restcountries.com/v3.1/all'
+// let url  all'
 // let input_data = document.querySelector('.oneforall')
 // let data = fetch(url)
 // .then(response=>{
@@ -256,21 +260,77 @@
 // }
 // color()
 //!--------------------------------Getting data by await in an API ---------------------------------------------------------------
-async function cat(){
-var url = 'https://catfact.ninja/fact'
-try{
-var initial_data = await fetch(url)
-var final_data = initial_data.json()
-final_data
-.then(res=>{
-    console.log(res)
-    console.log(res.fact)
-    console.log(res.length)
-})
-}
-catch(e){
-    console.log("ERROR = ", e)
-}
-}
-cat()
+// async function cat(){
+// var url = 'https://catfact.ninja/fact'
+// try{
+// var initial_data = await fetch(url)
+// var final_data = initial_data.json()
+// final_data
+// .then(res=>{
+//     console.log(res)
+//     console.log(res.fact)
+//     console.log(res.length)
+//     for(let i of res.fact)
+//     console.log(i)
+// })
+// }
+// catch(e){
+//     console.log("ERROR = ", e)
+// }
+// }
+// cat()
+//!----------------------------------------Fetch data using Await in unsplash-------------------------
+
+// let api ='https://api.unsplash.com/photos?page=2&client_id=TyWzQaHSIA1kosKLDor0Y4q0kth4wP9l0eTprNT7oz0&per_page=50&order_by=latest'
+// async function unsplash(){
+    
+//     try{
+//     let data_fetch = await fetch(api)
+//     let final_data = data_fetch.json()
+//     let end_data = await final_data
+//     for(let i of end_data){
+//         let input_data = i.urls.thumb
+//         let image_create = document.createElement('img')
+//         image_create.setAttribute('src', input_data)
+//         document.querySelector('body').append(image_create)
+//     }
+//     }
+//     catch(err){
+//         console.log(err)
+
+//     }
+
+// }
+// unsplash()
+//!-------------------------------------------------------------------------------------
+// async function cat_fact(){
+//     try{
+//         let url = 'https://catfact.ninja/fact'
+//     let data_get = await fetch(url)
+//     let input_data = data_get.json()
+//     let final_output = await input_data;
+//     console.log(final_output)
+//         let create_para = document.createElement('p')
+//         create_para = final_output
+//         document.querySelector('body').append(create_para)
+//     }
+//     catch(err){
+//         console.log(err)
+//     }
+    
+// }
+// cat_fact()
+
+//!-----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
 
